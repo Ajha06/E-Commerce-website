@@ -2,6 +2,8 @@
 import { defineConfig } from "vite";
 import { resolve } from "path";
 
+
+
 export default defineConfig({
   build: {
     rollupOptions: {
@@ -11,9 +13,11 @@ export default defineConfig({
         contact: resolve(__dirname, "contact.html"),
         products: resolve(__dirname, "products.html"),
         addToCart: resolve(__dirname, "addToCart.html"),
+        signin: resolve(__dirname, "signin.html"),
+        signUp: resolve(__dirname, "signUp.html"),
+
         
-        addToCart: resolve(__dirname, "signUp.html"),
-        addToCart: resolve(__dirname, "signin.html"),
+       
         // Add more entry points for other HTML files as needed
       },
     },
